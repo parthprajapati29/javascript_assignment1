@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>assignment</title>
+<style type="text/css">
+.firstdiv{height: 100px;width: 250px;margin-right: 10px;margin-bottom : 10px; border: 2px solid grey;display: inline-block;float: left;}
+.seconddiv{height: 100px;width: 250px;border: 2px solid grey;margin-right: 10px;margin-bottom : 10px; display: inline-block;float: left;}
+.thirddiv{height: 100px;width: 250px;border: 2px solid grey;margin-right: 10px;margin-bottom : 10px; display: inline-block;float: left;}
+.fourthdiv {height: 100px;width: 250px;border: 2px solid grey;margin-right: 10px;margin-bottom : 10px; display: inline-block;float: left;}
+.fiveth{height: 100px;width: 250px;border: 2px solid grey;margin-right: 10px;margin-bottom : 10px;display: inline-block;}
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+
+<div class="firstdiv">1. 
+<button type="button" onclick="b1()">Car name</button>
+<div id="mydiv">
+	<h1 id="firstid" ></h1>
+</div>
+</div>
+
+<div class="seconddiv">2.
+<button type="button" onclick="b2()">Number</button>
+<div id="secondelementdiv">
+	<h1 id="secondid"></h1>
+</div>
+</div>
+
+<div class="thirddiv">3.
+<button type="button" onclick="b3()">click for addition</button>
+<div id="thirdelementdiv">
+	<h1 id="thirdid" ></h1>
+</div>
+</div>
+
+<div class="fourthdiv">4.
+<button type="button" onclick="b4()">Number</button>
+<div id="fourthelementdiv">
+	<h1 id="fourthid"></h1>
+</div>
+</div>
+
+<div class="fiveth">5. 
+<button type="button" onclick="nameinfo()">Name information</button>
+</div> <br>
+6. <button type="button" onclick="calculateAge()">calculate age </button>
+<h2 id="last">Change div element by clicking below button</h2>
+<button type="button" onclick="lastf()">button</button>
+</div>
+</body>
+
+<script type="text/javascript">
+
+function b1() {
+	    
+    var carName = "Honda City";
+    document.getElementById('firstid').innerHTML = carName;
+    var x = document.getElementById("mydiv");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function b2() {	
+	    
+    var number = 150;
+    document.getElementById('secondid').innerHTML = number;
+    var x = document.getElementById("secondelementdiv");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function b3() {
+	    
+    var x = 5;
+    var y = 10;
+    var z = x+y;
+    document.getElementById('thirdid').innerHTML = x+y;
+    var x = document.getElementById("thirdelementdiv");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function b4() {
+	    
+    var x = 5;
+    var y = 10;
+    var z = x + y;
+    document.getElementById("fourthid").innerHTML = "z ="+ z;
+    var x = document.getElementById("fourthelementdiv");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function nameinfo()
+{
+
+	var firstName ="John", lastName="Doe", age="35";
+	alert("Name: "+firstName + "   Lastname:  "+lastName+ "  Age:  "+ age);
+
+}
+
+function calculateAge(){
+	
+	const dob="14-10-1993";
+	alert("date of birth:  "+dob);
+}
+
+function lastf(){
+
+	document.getElementById("last").innerHTML="hei buddy";
+
+}
+
+</script>
+</html>
